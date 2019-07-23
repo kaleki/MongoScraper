@@ -8,12 +8,32 @@
     </head>
 
     <body>
-        {{> nav/navbar}}
-        <main>
-            <div class="container">
-                {{body}}
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+  <a class="navbar-brand" href="#">Mongo Scraper</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-            </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">Saved Articles</a>
+      </li>
+      <li><button type="button" class="btn btn-success" id="scrape">Scrape</button></li>
+      
+  </div>
+</nav>
+
+ <div class="jumbotron text-center">
+        <h1>NBA Mongo Scraper</h1>
+        <h3>Get the latest news from the NBA</h3>
+      </div>
+        <main>
+            
+                {{body}}
         </main>
         {{> footer}}
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
